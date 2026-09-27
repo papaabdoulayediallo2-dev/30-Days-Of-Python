@@ -1,4 +1,5 @@
 # Day 2: 30 Days of python programming
+import math
 prenom = 'Laye'
 nom = 'Diallo'
 pays = 'Senegal'
@@ -23,11 +24,18 @@ print('Longueur du prenom :', len(prenom))
 print('Longueur du prenom :', len(nom))
 num_one = 5
 num_two = 4
+rayon = 30
 total = num_one + num_two
 diff = num_two - num_one
 product = num_one * num_two
 division = num_one / num_two
 remainder = num_one % num_two
 exp = num_one ** num_two
+floor_division = num_one // num_two
 
+area_of_circle = math.pi * (rayon**2)
 
+rayon_utilisateur = float(input("Entre le rayon: "))
+aire = math.pi * (rayon_utilisateur**2)
+
+print("L'aire du cercle est :", aire)
